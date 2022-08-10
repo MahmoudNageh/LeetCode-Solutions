@@ -53,9 +53,11 @@ int romanToInt(char * s)
             Result = Result - Prev_Num + (Curr_Num - Prev_Num); 
         }
       
-      /* if the current is larger this means that we are on the special case where a small number comes before a large which means the small one will be substracted form the large one ( the first (-previous) is for substracting the value of the previous number that has been stored in the Result variable)*/
-      
-      
+      /* if the current is larger this means that we are on the special case where a small number comes before a large which means
+       * the small one will be substracted form the large one ( the first (-previous) is for substracting the value of the previous
+       * number that has been stored in the Result variable)
+       */
+  
         else
         {
         Result = Result + Curr_Num;    
